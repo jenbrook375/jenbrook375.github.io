@@ -6,14 +6,14 @@
 
 
 body {
-	font-family: 'courier new', courier, Arial, sans-serif;
+	font-family: 'arial', courier, verdana, sans-serif;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
 }
 
 h1, h2, h3 {
-	font-family: 'helvetica neue', helvetica, sans-serif;
+	font-family: 'verdana', trebuchet, sans-serif;
 }
 
 h1 {
