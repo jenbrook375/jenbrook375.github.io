@@ -8,8 +8,8 @@
 body {
 	font-family: "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
 	font-style: normal;
-	font-variant: normal;
 	font-weight: 500;
+	margin-top: 50px;
 }
 
 h1, h2, h3 {
@@ -54,9 +54,21 @@ section {
 
 /*navbar*/
 
+#header {
+	position: fixed;
+	height: 50px;
+	top: 0;
+	left: 0;
+	background-color: white;
+	width: 100%;
+	z-index: 999;
+}
+
 #header-title {
 	font-family: Impact,Arial,"sans serif";
+	color: blue;
 	float: left;
+	padding-left: 15px;
 	padding-top: 15px;
 	margin-bottom: 0px;
 	font-weight: 700;
@@ -74,11 +86,12 @@ section {
 
 #header-nav li a {
 	display: block;
-	padding: 15px;
+	padding: 5px;
 }
 #header-nav li a:hover {
 	background-color: rgba(153, 204, 255, .5);
 }
+
 
 /*top section styling*/
 
@@ -108,12 +121,8 @@ section {
 
 #books-img {
 	float: left;
-	position: relative;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	border: 1px solid black;
-	border-radius: 35px;
 }
+
 
 /*universal*/
 
@@ -125,7 +134,6 @@ section {
 .container {
 	width: 970px;
 	margin: 0 auto;
-	display: inline-block;
 }
 
 /*bottom section*/
@@ -176,6 +184,51 @@ section {
 	background-color: 
 }
 
+/*members*/
+
+#members {
+	padding top: 50px;
+}
+
+#members article {
+	padding-top: 30px;
+	width: 25%;
+	max-width: 100%;
+	border: 1px solid e9e9e9;
+	border-radius:5px;
+}
+
+#members article img {
+	max-width: 100%;
+	border-radius-top-right: 5px;
+	border-radius-top-left:5px;
+}
+#members {
+	 width: 970px;
+	 margin: 0 auto;
+	 display: -webkit-box;
+	 display: -moz-box;
+	 display: -ms-flexbox;
+	 display: -webkit-flex;
+	 display: flex;
+	 justify-content: space-between;
+	 align-item: center;
+	 height: 51px;
+}
+
+#mtop {
+	 width: 970px;
+	 margin: 0 auto;
+	 display: -webkit-box;
+	 display: -moz-box;
+	 display: -ms-flexbox;
+	 display: -webkit-flex;
+	 display: flex;
+	 justify-content: space-between;
+	 align-item: center;
+	 height: 51px;
+}
+
 /*clearfix*/
 .row:before,
 .row:after, .clearfix:before, .clearfix:after {
@@ -187,4 +240,61 @@ section {
 }
 .row, .clearfix {
     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.container {
+		width: 740px;
+	}
+
+	header {
+		font-size: 14px;
+	}
+	#header-nav li a{
+		padding: 18px 15px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.container {
+		width: 100%;
+		padding-left: 5PX;
+		padding-right: 5PX;
+	}
+
+	header-nav {
+		float: none;
+		clear: left;
+		font-size: 12px;
+	}
+
+	header {
+		height: 70px;
+	}
+
+	header-title {
+		float: none;
+		text-align: center;
+	}
+
+	header-title li a {
+		padding: 12px;
+	}
+	
+	h1 {
+		font-size: 28px;
+	}
+
+	h2 {
+		font-size: 15px;
+	}
+
+	#top fieldset {
+		width: 95%;
+	}
+
+	.one-half {
+		width: 98%;
+	}
 }
