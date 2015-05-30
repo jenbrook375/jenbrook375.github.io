@@ -1,0 +1,87 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+header {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 999;
+  border-bottom: 1px solid #cecece;
+}
+
+body {
+	font-family: "Trebuchet MS","Lucida Grande",Tahoma,sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	margin-top: 50px;
+}
+
+
+header.container {
+	height: 50px;
+	margin: 0 auto;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+header nav ul {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main, aside{
+	
+}
+/*.container article {
+	padding-top: 30px;
+	width: 25%;
+	max-width: 100%;
+	border: 1px solid e9e9e9;
+	border-radius:5px;
+}
+
+.container article img {
+	max-width: 100%;
+	border-radius-top-right: 5px;
+	border-radius-top-left:5px;
+}*/
+
+.container {
+  width: 970px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 51px;
+}
+
+

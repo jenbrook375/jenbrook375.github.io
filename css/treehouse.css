@@ -1,0 +1,45 @@
+* {
+	font-family: "sans serif";
+	font-weight: 500px;
+}
+
+
+header {
+	box-shadow: 0 0 2px #000;
+	
+}
+
+
+.container {
+	width: 1020px;
+	margin: 0 auto;
+}
+
+
+h3 {
+
+}
+ul {
+	text-decoration: none;
+}
+
+nav {
+	flex: display;
+	
+}
+ li,h1 {
+ 	display: inline-block;
+ }
+
+/*clearfix*/
+.row:before,
+.row:after, .clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+} 
+.row:after, .clearfix:after {
+    clear: both;
+}
+.row, .clearfix {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
